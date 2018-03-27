@@ -2,7 +2,7 @@
     margin-bottom: 0;
 }
 .navbar-default, .jumbotron {
-    background-color: #3D93A3;
+    background-color: #5f93ea;
 }
 
 .navbar-default, .jumbotron a{
@@ -36,7 +36,7 @@
 }
 
 .panel-default>.panel-heading {
-    color: #3D93A3;
+    color: #5f93ea;
     background-color: white;
     border-color: #ddd
 }

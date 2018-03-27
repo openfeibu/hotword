@@ -55,7 +55,7 @@
             @yield('content')
         </div>
         <div class='col-md-4'>
-            @include('default.author')
+<!--             @include('default.author') -->
 
             @include('default.tag')
 
