@@ -28,36 +28,36 @@
                                 </div>
                             </div>
                         </div>
-                      <!--   <div class="form-group">
+                        <div class="form-group">
                             <label for="keyword">关键字(Keywords)</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type='text' class='form-control' name="keyword" id='keyword' placeholder='请输入关键字，以英文逗号分割，利于搜索引擎收录'>
                                 </div>
                             </div>
-                        </div> -->
-                     <!--    <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="desc">描述(Description)</label>
                             <div class="row">
                                 <div class='col-md-10'>
                                     <input type='text' class='form-control' name="desc" id='desc' placeholder='请输入文章描述'>
                                 </div>
                             </div>
-                        </div> -->
-                       <!--  <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="content">文章内容</label>
                             <div id="editormd">
                                 <textarea class="editormd-markdown-textarea" style="display:none;" id="content" name="markdown-content"></textarea>
                                 <textarea style="display:none;"  name="html-content"></textarea>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="form-group">
                             <label for="content">文章内容</label>
                             <div id="">
                                 <textarea  name="html-content" style="width: 100%;height:200px;resize:none"></textarea>
                             </div>
                         </div>
-                  <!--       <div class="form-group">
+                        <div class="form-group">
                             <label for="cate_id">文章分类</label>
                             <div class="row">
                                 <div class='col-md-6'>
@@ -65,15 +65,15 @@
                                     {!! $category->getSelect(0, '请选择', '') !!}
                                 </div>
                             </div>
-                        </div> -->
-                     <!--    <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="tags">标签</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type='text' class='form-control' id='tags' name="tags" placeholder='多个标签以; 分割'>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
 
                     {{ csrf_field() }}

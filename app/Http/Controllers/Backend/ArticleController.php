@@ -53,6 +53,10 @@ class ArticleController extends Controller
         return view('backend.article.create');
     }
 
+    public function createSimple()
+    {
+        return view('backend.article.createSimple');
+    }
     /**
      * @param CreateRequest $request
      * @return $this|\Illuminate\Http\RedirectResponse

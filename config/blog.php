@@ -40,6 +40,10 @@ return [
                 'icon' => '',
                 'name' => '发布文章'
             ],
+            'backend.article.createSimple' => [
+                'icon' => '',
+                'name' => '发布文章简约'
+            ],
             'backend.category.index' => [
                 'icon' => '',
                 'name' => '文章分类'

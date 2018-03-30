@@ -24,8 +24,8 @@ class CreateRequest extends Request
     public function rules()
     {
         return [
-            'title' => 'required',
-            'cate_id'   => 'required|numeric',
+            'title' => 'required|unique:articles,title',
+        //    'cate_id'   => 'required|numeric',
         ];
     }
 
@@ -33,8 +33,9 @@ class CreateRequest extends Request
     {
         return [
             'title.required'    => '请输入文章标题',
-            'cate_id.required'  => '请选择文章分类',
-            'cate_id.numeric'   => '请选择合法的分类'
+            'title.unique' => '已存在该文章',
+        //    'cate_id.required'  => '请选择文章分类',
+        //    'cate_id.numeric'   => '请选择合法的分类'
         ];
     }
 }
