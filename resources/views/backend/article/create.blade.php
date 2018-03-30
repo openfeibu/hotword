@@ -44,14 +44,20 @@
                                 </div>
                             </div>
                         </div> -->
+                       <!--  <div class="form-group">
+                            <label for="content">文章内容</label>
+                            <div id="editormd">
+                                <textarea class="editormd-markdown-textarea" style="display:none;" id="content" name="markdown-content"></textarea>
+                                <textarea style="display:none;"  name="html-content"></textarea>
+                            </div>
+                        </div> -->
                         <div class="form-group">
                             <label for="content">文章内容</label>
                             <div id="">
-                                <!-- <textarea class="editormd-markdown-textarea" id="content" name="markdown-content"></textarea> -->
                                 <textarea  name="html-content" style="width: 100%;height:200px;resize:none"></textarea>
                             </div>
                         </div>
-                        <div class="form-group">
+                  <!--       <div class="form-group">
                             <label for="cate_id">文章分类</label>
                             <div class="row">
                                 <div class='col-md-6'>
@@ -59,7 +65,7 @@
                                     {!! $category->getSelect(0, '请选择', '') !!}
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                      <!--    <div class="form-group">
                             <label for="tags">标签</label>
                             <div class="row">
