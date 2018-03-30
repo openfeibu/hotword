@@ -46,8 +46,8 @@
                         </div> -->
                         <div class="form-group">
                             <label for="content">文章内容</label>
-                            <div id="editormd">
-                                <textarea class="editormd-markdown-textarea" style="display:none;" id="content" name="markdown-content"></textarea>
+                            <div id="">
+                                <textarea class="editormd-markdown-textarea" id="content" name="markdown-content"></textarea>
                                 <textarea style="display:none;"  name="html-content"></textarea>
                             </div>
                         </div>
