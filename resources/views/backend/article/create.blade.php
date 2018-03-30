@@ -28,22 +28,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
+                      <!--   <div class="form-group">
                             <label for="keyword">关键字(Keywords)</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type='text' class='form-control' name="keyword" id='keyword' placeholder='请输入关键字，以英文逗号分割，利于搜索引擎收录'>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group">
+                        </div> -->
+                     <!--    <div class="form-group">
                             <label for="desc">描述(Description)</label>
                             <div class="row">
                                 <div class='col-md-10'>
                                     <input type='text' class='form-control' name="desc" id='desc' placeholder='请输入文章描述'>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <label for="content">文章内容</label>
                             <div id="editormd">
@@ -60,14 +60,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
+                     <!--    <div class="form-group">
                             <label for="tags">标签</label>
                             <div class="row">
                                 <div class='col-md-6'>
                                     <input type='text' class='form-control' id='tags' name="tags" placeholder='多个标签以; 分割'>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                     {{ csrf_field() }}
