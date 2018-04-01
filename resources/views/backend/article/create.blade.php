@@ -51,12 +51,7 @@
                                 <textarea style="display:none;"  name="html-content"></textarea>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="content">文章内容</label>
-                            <div id="">
-                                <textarea  name="html-content" style="width: 100%;height:200px;resize:none"></textarea>
-                            </div>
-                        </div>
+
                         <div class="form-group">
                             <label for="cate_id">文章分类</label>
                             <div class="row">
