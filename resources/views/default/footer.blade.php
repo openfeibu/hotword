@@ -16,7 +16,7 @@
 		console.log(des)
 		wx.onMenuShareAppMessage({
 			  title: $("title").text(), // 分享标题
-			  desc: des, // 分享描述
+			  desc: "热词，知识，网络用语，常用词语", // 分享描述
 			  link: 'http://word.feibu.info', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
 			  imgUrl: 'http://word.feibu.info/default/images/logo.png', // 分享图标
 			  type: 'link', // 分享类型,music、video或link，不填默认为link
