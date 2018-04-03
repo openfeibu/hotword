@@ -12,7 +12,7 @@
 <script>
 		  //分享任务
 	wx.ready(function(){
-		var des = $(".markdown-body").length == 0 ? $($("meta[name=description]").attr("content")) : $(".markdown-body").find("p").text();
+		var des = $(".markdown-body").length == 0 ? $("meta[name=description]").attr("content") : $(".markdown-body").find("p").text();
 		wx.onMenuShareAppMessage({
 			  title: $("title").text(), // 分享标题
 			  desc: des, // 分享描述

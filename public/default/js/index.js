@@ -8,7 +8,7 @@ function is_weixn(){
         return false;  
     }  
 } 
-console.log(1)
+
 //微信注入
 function fb_config(){
    $.getJSON(locahost +'wechat/getConfig',{"url":location.href},function(data) {
