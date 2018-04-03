@@ -8,7 +8,7 @@
                         <span>·</span>{{$article->title}}
                 </h4>
                 <p class="desc">
-                  <span>#{{ $article->category->name }}#</span> {{$article->desc}}
+                  <span>#{{ $article->category->name }}#</span> {{$article->content}}
                 </p>
                <!--  <p class="info">
                     <span>
