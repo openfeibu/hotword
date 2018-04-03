@@ -30,7 +30,7 @@
 			  } 
 		  });
 		wx.onMenuShareTimeline({
-			title: $("title").text()+des, // 分享标题
+			title: $("title").text()+":"+des, // 分享标题
 			link: location.href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
 			imgUrl: 'http://word.feibu.info/default/images/logo.png', // 分享图标
 			success: function () { 
