@@ -20,6 +20,8 @@
     @yield('style')
 
     <link rel="stylesheet" href="{{ asset('default/css/index.css') }}">
+    <script src="{{ asset('default/js/jQuery-2.2.0.min.js') }}"></script>
+    <script src="{{ asset('default/js/jweixin-1.2.0.js') }}"></script>
 
 
 </head>
@@ -27,7 +29,7 @@
 <body>
 @inject('systemPresenter', 'App\Presenters\SystemPresenter')
 <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
+    <div class="container" style="padding-top: 15px;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -35,7 +37,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url("/") }}" >{{ $systemPresenter->getKeyValue('blog_name') }}</a>
+            <a  href="{{ url("/") }}" ><img src="{{ asset('default/images/logo.png') }}" alt=""></a>
         </div>
         @include('default.navigation')
     </div>
@@ -43,9 +45,9 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <p>
+     
             @yield('header-text')
-        </p>
+       
     </div>
 </div>
 
@@ -54,14 +56,14 @@
         <div class='col-md-8' >
             @yield('content')
         </div>
-        <div class='col-md-4'>
+        <div class='col-md-4' style="padding-right: 0;padding-left: 0;">
 <!--             @include('default.author') -->
 
-            @include('default.tag')
+            <!-- @include('default.tag') -->
 
             @include('default.hot')
 
-            @include('default.link')
+            
         </div>
     </div>
 </div> <!-- /container -->

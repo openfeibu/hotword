@@ -18,10 +18,10 @@
         <div class="row">
             <div class="col-md-12 to-animate fadeInUp animated">
                 <h3 class="color-white">
-                    {{ $article->title }}
+                   {{ $systemPresenter->getKeyValue('motto') }}
                 </h3>
 
-                <p class=" m-t-25 color-white">
+               <!--  <p class=" m-t-25 color-white">
                     <i class="glyphicon glyphicon-calendar"></i>{{ $article->created_at }}
                     &nbsp;
                     @if($article->category)
@@ -39,24 +39,30 @@
                         </a>
                         &nbsp;
                     @endforeach
-                </p>
+                </p> -->
             </div>
         </div>
     </div>
 @endsection
 
 @section('content')
-    <div class="markdown-body editormd-html-preview" style="padding:0;">
-        {!! $article->html_content !!}
-    </div>
+    <div class="article_con_left" >
+        <div class="article_con_title">{{ $article->title }}</div>
+        <p class="article_con_desc">
+            <span>#{{ $article->category->name }}#</span> 热力值:{{$article->read_count}}
+        </p>
+        <div class="markdown-body editormd-html-preview" style="padding:0;">
+            {!! $article->html_content !!}
+        </div>
 
-    <div id="share" class="social-share m-t-25"></div>
-    <!-- 评论插件 -->
-    @include('default.comment.index', [
-        'commentId' => $article->id,
-        'commentTitle' => $article->title,
-        'commentUrl' => Request::getUri()
-    ])
+        <div id="share" class="social-share " data-sites="wechat,qq,weibo"></div>
+        <!-- 评论插件 -->
+        @include('default.comment.index', [
+            'commentId' => $article->id,
+            'commentTitle' => $article->title,
+            'commentUrl' => Request::getUri()
+        ])
+    </div>
 @endsection
 
 @section('script')
@@ -64,7 +70,7 @@
 
     <script>
         $(function(){
-            $('#share').share({sites: ['qzone', 'qq', 'weibo','wechat']});
+            $('#share').share();
         });
     </script>
 

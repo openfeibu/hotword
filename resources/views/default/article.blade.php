@@ -1,16 +1,16 @@
 @if($articles)
+    <div class="article-list-title"><span>·</span>三分热度<span>·</span></div>
     <ol class="article-list">
         @foreach ($articles as $article)
             <li>
+                <a href="{{ route('article',['id' => $article->id]) }}" >
                 <h4 class='title'>
-                    <a href="{{ route('article',['id' => $article->id]) }}" target="_blank">
-                        {{$article->title}}
-                    </a>
+                        <span>·</span>{{$article->title}}
                 </h4>
                 <p class="desc">
-                   {{$article->desc}}
+                  <span>#{{ $article->category->name }}#</span> {{$article->desc}}
                 </p>
-                <p class="info">
+               <!--  <p class="info">
                     <span>
                         <i class="glyphicon glyphicon-calendar"></i>{{ date('Y-m-d', strtotime($article->created_at)) }}
                     </span>
@@ -26,9 +26,10 @@
                     <span>
                         <i class="glyphicon glyphicon-eye-open"></i> {{ $article->read_count }} views
                     </span>
-                </p>
+                </p> -->
+                </a>
             </li>
-            <hr/>
+         <!--    <hr/> -->
         @endforeach
     </ol>
     {!! $articles->links() !!}

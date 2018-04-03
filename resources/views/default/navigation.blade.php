@@ -8,14 +8,15 @@
             @endforeach
         @endif
     </ul>
-    <form class="navbar-form navbar-right" action="{{ route('search') }}" method="get">
+    
+</div>
+<form class="navbar-form navbar-right" action="{{ route('search') }}" method="get">
         <div class="input-group">
-            <input type="search" class="search-field form-control" value="" name="keyword" placeholder="Search">
+            <input type="search" class="search-field " value="" name="keyword" placeholder="搜索热词、热点" >
             <span class="input-group-btn">
-                <button type="submit" class="btn btn-default">
-                    <span class="glyphicon glyphicon-search"></span>
+                <button type="submit" class="search-btn ">
+                    <!-- <span class="glyphicon glyphicon-search"></span> -->
                 </button>
             </span>
         </div>
     </form>
-</div>

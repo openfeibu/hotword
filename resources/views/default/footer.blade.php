@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <p style="margin-top:15px;">
+                <p>
                     <strong>CopyRight ©广州飞步信息科技有限公司</strong>
                 </p>
             </div>
