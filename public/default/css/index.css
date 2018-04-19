@@ -147,7 +147,7 @@ white-space: nowrap;}
 .hot_a:hover{text-decoration: none;color: #e67796;}
 .list-group-item{border:none;padding-top: 15px;padding-bottom: 15px;}
 
-.article_con_title{font-size: 26px;color: #2e3944;font-weight: bold;}
+.article_con_title{font-size: 26px;color: #2e3944;font-weight: bold;padding-right: 100px;}
 .article_con_desc{color: #bbbdc1;font-size: 16px;padding:10px 0;font-weight: bold;}
 .article_con_desc span{margin-right: 20px;}
 .markdown-body{color: #2e3944;font-size: 16px;line-height: 30px;text-indent: 2em;}
