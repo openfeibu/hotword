@@ -24,4 +24,19 @@ class ArticleController extends Controller
         $article->save();
         return view('default.show_article', compact('article'));
     }
+	public function store(Request $request)
+	{
+		$this->article->create([
+			'title' => $request->title,
+			'keyword' => $request->keyword ?? '',
+			'desc' => $request->desc ?? '',
+			'content' => $request->content ?? '',
+			'cate_id' => $request->cate_id ?? 3,
+			'user_id' => 7,
+		]);
+		return [
+			'code' => '200',
+			'message' => 'success',
+		];
+	}
 }

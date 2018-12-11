@@ -15,6 +15,8 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/article/{id}', ['as' => 'article', 'uses' => 'ArticleController@index']);
 
+Route::post('/article/store', ['as' => 'article.store', 'uses' => 'ArticleController@store']);
+
 Route::get('/category/{id}', ['as' => 'category', 'uses' => 'CategoryController@index']);
 
 Route::get('/tag/{id}', ['as' => 'tag', 'uses' => 'TagController@index']);
