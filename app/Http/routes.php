@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/postbaidu', 'HomeController@postbaidu');
+
 Route::get('/article/{id}', ['as' => 'article', 'uses' => 'ArticleController@index']);
 
 Route::post('/article/store', ['as' => 'article.store', 'uses' => 'ArticleController@store']);
